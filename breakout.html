@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="functions.js"></script>
+        <script src="breakout.js"></script>
+    </head>
+    <body>
+        <h1 align="middle" style="font-family:'Times New Roman', Times, serif; letter-spacing: 10px; margin-bottom:0px;font-size: 40px">BREAKOUT</h1>
+        <h2 align="middle" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; letter-spacing: 8px; margin-top: 0px; font-size: 15px;">GAME</h2>
+
+        <div align="middle">
+            <svg id="canvasB" width="600" height="600" />
+        </div>
+        <p align="middle">by Bryan Mayson 29259436</p>
+        <h3 align="middle"style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; letter-spacing: 10px; margin-bottom:0px;font-size: 20px">INSTRUCTIONS</h3>
+        <p style="text-align: center; margin-left: 10%; margin-right:10% ">
+            The Breakout game would also require you to click at any area within the canvas for the game to start. The objective of the game is do destroy as many generated blocks as possible. At the beginning of the game, the ball would be located on the paddle and is up to you, the player
+            to decided when and where to let the ball move. To achieve this, simply left click on the canvas during your game. Know that for every collision of the ball with the paddle and the upper canvas boundaries, the y direction of the ball would be reversed. While, colliding with the
+            left and right bounds of the canvas would reverse the x directions of the ball movement. Colliding with any generated block would grant you 100 points, and also cause other effects such as reversing the y direction of the ball as well as removing that generated block. The game would terminate
+            when you either break all of the generated blocks or when the ball has exceeded the lower boundary of the canvas. In the end of the game the the score you gained would be displayed on the screen and the game would be terminated.
+        </p>
+    </body>
+</html>

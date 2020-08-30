@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="functions.js"></script>
+        <script src="pong.js"></script>
+    </head>
+    <body>
+        <h1 align="middle" style="font-family:'Times New Roman', Times, serif; letter-spacing: 10px; margin-bottom:0px;font-size: 40px">PONG</h1>
+        <h2 align="middle" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; letter-spacing: 8px; margin-top: 0px; font-size: 15px;">GAME</h2>
+
+        <div align="middle">
+            <svg id="canvas" width="600" height="600" />
+        </div>
+        <p align="middle" >by Bryan Mayson 29259436</p>
+        <h3 align="middle"style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; letter-spacing: 10px; margin-bottom:0px;font-size: 20px">INSTRUCTIONS</h3>
+        <p style="text-align: center; margin-left: 10%; margin-right:10% ">The Pong game will require you to click at any area of the canvas for the game to begin. As the player, you would be in control of the left paddle and the movement of the paddle is determined by the movement and location of your mouse.
+            The starting location of the ball is randomised in 3 different locations which each starting traveling direction being unique. Know that intercepting the ball with the upper and lower 45% of your paddle would cause the ball to deflect upwards and downards respectively
+            while landing within the centre would cause it to move randomly either up straight or down. Your opponent would be an simple AI, which chases after the position of the balls y direction with a delay. Bouncing the ball on the upper and lower canvas boundaries
+            would cause the ball to move in the reversed y direction and the same x direction. If you are able to make the ball go beyond the right boundary of the canvas you would be granted a point and the positions of the ball and paddles would be reset. For the AI to score the same rules are applied.
+            Simply score 11 points to win the game to allow the program to terminate.</p>
+    </body>
+</html>
